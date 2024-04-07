@@ -700,6 +700,22 @@ gregtechfoodoption.machine.farmer.tooltip.consumption=While working, consumes %,
 gregtechfoodoption.machine.farmer.tooltip.working=Works on a 9x9 Farm in front
 gregtechfoodoption.machine.farmer.tooltip.speed=Works on one Block every %d Ticks
 
+# Freeze Dryer
+gregtechfoodoption.machine.freeze_dryer.lv.name=Basic Freeze Dryer
+gregtechfoodoption.machine.freeze_dryer.mv.name=Advanced Freeze Dryer
+gregtechfoodoption.machine.freeze_dryer.hv.name=Advanced Freeze Dryer II
+gregtechfoodoption.machine.freeze_dryer.ev.name=Advanced Freeze Dryer III
+gregtechfoodoption.machine.freeze_dryer.iv.name=Elite Freeze Dryer
+gregtechfoodoption.machine.freeze_dryer.luv.name=Elite Freeze Dryer II
+gregtechfoodoption.machine.freeze_dryer.zpm.name=Elite Freeze Dryer III
+gregtechfoodoption.machine.freeze_dryer.uv.name=Elite Freeze Dryer IV
+gregtechfoodoption.machine.freeze_dryer.uhv.name=High-Tech Freeze Dryer
+gregtechfoodoption.machine.freeze_dryer.uev.name=High-Tech Freeze Dryer II
+gregtechfoodoption.machine.freeze_dryer.uiv.name=High-Tech Freeze Dryer III
+gregtechfoodoption.machine.freeze_dryer.uxv.name=High-Tech Freeze Dryer IV
+gregtechfoodoption.machine.freeze_dryer.opv.name=Legendary Freeze Dryer
+recipemap.freeze_dryer.name=Freeze Dryer
+
 metaitem.sodium_perchlorate_dust.name=Sodium Perchlorate
 metaitem.sodium_chlorate_dust.name=Sodium Chlorate
 
@@ -769,6 +785,8 @@ metaitem.food.ice_cream.chip.name=Potato Chip Ice Cream
 metaitem.food.ice_cream.chip.tooltip=https://tenor.com/view/cat-swim-in-milk-cat-kitty-milk-milk-cat-gif-23473453
 metaitem.food.ice_cream.rainbow.name=Rainbow Ice Cream
 metaitem.food.ice_cream.rainbow.tooltip=Taste the full Rainbow
+metaitem.food.sandwich.ice_cream.name=Ice Cream Sandwich
+metaitem.food.sandwich.freeze_dried_ice_cream.name=Freeze Dried Ice Cream Sandwich
 
 gregtech.material.gtfo_skimmed_milk=Skim Milk
 gregtech.material.gtfo_cream=Cream
@@ -1206,3 +1224,4 @@ metaitem.cassava_pulp_dust.name=Cassava Pulp
 metaitem.msg_fermentation_mixture_dust.name=MSG (Monosodium Glutamate) Fermentation Mixture
 metaitem.msg_dust.name=MSG (Monosodium Glutamate)
 gregtech.material.gtfo_msg_mixture=MSG (Monosodium Glutamate) Mixture
+metaitem.crop.taro.name=Taro Tuber

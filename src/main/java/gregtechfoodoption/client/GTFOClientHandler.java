@@ -13,6 +13,7 @@ public class GTFOClientHandler {
     public static OrientedOverlayRenderer CUISINE_ASSEMBLER_OVERLAY = new OrientedOverlayRenderer("machines/cuisine_assembler");
     public static OrientedOverlayRenderer MICROWAVE_OVERLAY = new OrientedOverlayRenderer("machines/microwave");
     public static OrientedOverlayRenderer MULTICOOKER_OVERLAY = new OrientedOverlayRenderer("machines/multicooker");
+    public static OrientedOverlayRenderer FREEZE_DRYER_OVERLAY = new OrientedOverlayRenderer("machines/freeze_dryer");
     public static final OrientedOverlayRenderer MOB_AGE_SORTER_OVERLAY = new OrientedOverlayRenderer("machines/mob_age_sorter");
     public static final OrientedOverlayRenderer MOB_EXTERMINATOR_OVERLAY = new OrientedOverlayRenderer("machines/mob_exterminator");
     public static final OrientedOverlayRenderer MOB_EXTRACTOR_OVERLAY = new OrientedOverlayRenderer("machines/mob_extractor");

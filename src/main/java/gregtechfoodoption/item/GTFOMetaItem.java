@@ -12,6 +12,7 @@ import gregtech.api.util.RandomPotionEffect;
 import gregtech.common.items.MetaItems;
 import gregtechfoodoption.GTFOConfig;
 import gregtechfoodoption.GTFOValues;
+import gregtechfoodoption.block.GTFOCrop;
 import gregtechfoodoption.block.GTFOCrops;
 import gregtechfoodoption.item.food.GTFOFoodUseManager;
 import gregtechfoodoption.potion.*;
@@ -242,6 +243,8 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
     public static MetaItem<?>.MetaValueItem ICE_CREAM_BEAR;
     public static MetaItem<?>.MetaValueItem ICE_CREAM_CHIP;
     public static MetaItem<?>.MetaValueItem ICE_CREAM_RAINBOW;
+    public static MetaItem<?>.MetaValueItem ICE_CREAM_SANDWICH;
+    public static MetaItem<?>.MetaValueItem FREEZE_DRIED_ICE_CREAM_SANDWICH;
 
     //misc items
     public static MetaItem<?>.MetaValueItem GELATIN;
@@ -407,6 +410,7 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
     public static MetaItem<?>.MetaValueItem UNSEASONED_WOK;
     public static MetaItem<?>.MetaValueItem CASSAVA;
     public static MetaItem<?>.MetaValueItem CASSAVA_SEED;
+    public static MetaItem<?>.MetaValueItem TARO;
 
     public GTFOMetaItem() {
         super((short) 0);
@@ -1123,12 +1127,14 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         WHITE_GRAPE_SEED = addItem(321, "seed.white_grape");
         WHITE_GRAPE_SEED.addComponents(new GTFOCropSeedBehaviour(GTFOCrops.CROP_WHITE_GRAPE, WHITE_GRAPE_SEED.getStackForm(), WHITE_GRAPES.getStackForm()));
         CASSAVA = addItem(349, "crop.cassava").addOreDict("cropCassava").addComponents(new GTFOFoodStats(3, 0.8f, false, true, ItemStack.EMPTY,
-                new RandomPotionEffect(MobEffects.WITHER, 100, 25, 0))
+                new RandomPotionEffect(MobEffects.WITHER, 100, 0, 0))
                 .nutrients(0f, 0f, 0.75f, 0f, 1f));
 
         CASSAVA_SEED = addItem(350, "seed.cassava");
         CASSAVA_SEED.addComponents(new GTFOCropSeedBehaviour(GTFOCrops.CROP_CASSAVA, CASSAVA_SEED.getStackForm(), CASSAVA.getStackForm()));
-
+        TARO = addItem(353, "crop.taro").addOreDict("cropTaro").addComponents(new GTFOFoodStats(4, 1.2f, false, true, ItemStack.EMPTY)
+                .nutrients(0f, 0f, 0.85f, 0f, 1.2f));
+        TARO.addComponents(new GTFOCropSeedBehaviour(GTFOCrops.CROP_TARO, TARO.getStackForm(), TARO.getStackForm()));
 
         // 175-189 left blank for organic circuits
         SPRINKLER_COVER = addItem(224, "cover.sprinkler").blacklistKitchen();
@@ -1148,6 +1154,12 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
 
         WOK = addItem(347, "component.wok").blacklistKitchen();
         UNSEASONED_WOK = addItem(348, "component.unseasoned_wok").blacklistKitchen();
+        //349 & 350 are taken by cassava and cassava seed
+        ICE_CREAM_SANDWICH = addItem(351, "food.sandwich.ice_cream").addComponents(new GTFOFoodStats(6, 0.33f, false, true, ItemStack.EMPTY)
+                .nutrients(1.25f, 0.25f, 1f, 0f, 0.25f));
+        FREEZE_DRIED_ICE_CREAM_SANDWICH = addItem(352, "food.sandwich.freeze_dried_ice_cream").addComponents(new GTFOFoodStats(6, 0.33f, false, true, ItemStack.EMPTY)
+                .nutrients(1.25f, 0.25f, 1f, 0f, 0.25f));
+        //353 taken by taro
 
         {
             int heal = 44;

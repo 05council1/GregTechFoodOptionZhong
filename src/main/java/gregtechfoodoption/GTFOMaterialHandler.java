@@ -605,6 +605,7 @@ public class GTFOMaterialHandler {
     public static final MetaOreDictItem.OreDictValueItem MSG_FERMENTATION_MIXTURE = SHAPED_ITEM.addOreDictItem(1053, "msg_fermentation_mixture", 0xecffd0, GTFOValues.Organic, OrePrefix.dust);
     public static final MetaOreDictItem.OreDictValueItem MSG = SHAPED_ITEM.addOreDictItem(1054, "msg", 0xfffcf5, GTFOValues.Organic, OrePrefix.dust);
 
+    public static final MetaOreDictItem.OreDictValueItem THIN_CAKE_SLICE = SHAPED_ITEM.addFoodOreDictItem(1146, "thin_cake_slice",  0xb5803a, MaterialIconSet.ROUGH, OrePrefix.plate);
 
     public static final Material Paracetamol = new Material.Builder(21900, gtfoId("paracetamol")).dust()
             .color(0x0045A0).iconSet(MaterialIconSet.SHINY)

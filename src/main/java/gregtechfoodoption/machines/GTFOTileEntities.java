@@ -27,6 +27,7 @@ public class GTFOTileEntities {
     public static GTFOSimpleMachineMetaTileEntity[] CUISINE_ASSEMBLER = new GTFOSimpleMachineMetaTileEntity[GTValues.V.length - 1];
     public static MetaTileEntityMicrowave[] MICROWAVE = new MetaTileEntityMicrowave[GTValues.V.length - 1];
     public static GTFOSimpleMachineMetaTileEntity[] MULTICOOKER = new GTFOSimpleMachineMetaTileEntity[GTValues.V.length - 1];
+    public static GTFOSimpleMachineMetaTileEntity[] FREEZE_DRYER = new GTFOSimpleMachineMetaTileEntity[GTValues.V.length - 1];
 
     public static final MetaTileEntityMobAgeSorter[] MOB_AGE_SORTER = new MetaTileEntityMobAgeSorter[4];
     public static final MetaTileEntityMobExterminator[] MOB_EXTERMINATOR = new MetaTileEntityMobExterminator[4];
@@ -65,6 +66,7 @@ public class GTFOTileEntities {
             MICROWAVE[12] = registerMetaTileEntity(8542, new MetaTileEntityMicrowave(location("microwave.uxv"), GTFORecipeMaps.MICROWAVE_RECIPES, GTFOClientHandler.MICROWAVE_OVERLAY, 12));
             MICROWAVE[13] = registerMetaTileEntity(8543, new MetaTileEntityMicrowave(location("microwave.opv"), GTFORecipeMaps.MICROWAVE_RECIPES, GTFOClientHandler.MICROWAVE_OVERLAY, 13));
         }
+
         BAKING_OVEN = registerMetaTileEntity(8516, new MetaTileEntityBakingOven(location("baking_oven")));
         ELECTRIC_BAKING_OVEN = registerMetaTileEntity(8517, new MetaTileEntityElectricBakingOven(location("electric_baking_oven")));
         STEAM_BAKING_OVEN = registerMetaTileEntity(8544, new MetaTileEntitySteamBakingOven(location("steam_baking_oven"), GTFORecipeMaps.ELECTRIC_BAKING_OVEN_RECIPES, 10));
@@ -101,6 +103,9 @@ public class GTFOTileEntities {
         registerGTFOSimpleMetaTileEntity(MULTICOOKER, 8566, "multicooker", GTFORecipeMaps.MULTICOOKER_RECIPES, GTFOClientHandler.MULTICOOKER_OVERLAY, true, GTFOTileEntities::location, GTUtility.hvCappedTankSizeFunction);
 
         KITCHEN = registerMetaTileEntity(8581, new MetaTileEntityKitchen(location("kitchen")));
+
+        registerGTFOSimpleMetaTileEntity(FREEZE_DRYER, 8582, "freeze_dryer", GTFORecipeMaps.FREEZE_DRYER_RECIPES, GTFOClientHandler.FREEZE_DRYER_OVERLAY, true, GTFOTileEntities::location, GTUtility.hvCappedTankSizeFunction);
+
     }
 
     private static ResourceLocation location(String name) {
