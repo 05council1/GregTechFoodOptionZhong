@@ -598,6 +598,7 @@ public class GTFOMaterialHandler {
     public static final GTFOOredictItem.OreDictValueItem CRACKER_GRAHAM_UNGRADED = SHAPED_ITEM.addOreDictItem(1049, "cracker_graham_ungraded", 0xf0c25d, MaterialIconSet.DULL, OrePrefix.plate);
     public static final GTFOOredictItem.OreDictValueItem CHOCOLATE_LIQUOR_PRESSED = SHAPED_ITEM.addOreDictItem(1050, "chocolate_liquor_pressed", 0xa6795a, GTFOValues.Organic, OrePrefix.crushed);
     public static final GTFOOredictItem.OreDictValueItem CHOCOLATE_LIQUOR_DUTCHED_PRESSED = SHAPED_ITEM.addOreDictItem(1051, "chocolate_liquor_dutched_pressed", 0xab7550, GTFOValues.Organic, OrePrefix.crushed);
+    public static final MetaOreDictItem.OreDictValueItem THIN_CAKE_SLICE = SHAPED_ITEM.addFoodOreDictItem(1146, "thin_cake_slice",  0xb5803a, MaterialIconSet.ROUGH, OrePrefix.plate);
 
     public static final Material Paracetamol = new Material.Builder(21900, gtfoId("paracetamol")).dust()
             .color(0x0045A0).iconSet(MaterialIconSet.SHINY)

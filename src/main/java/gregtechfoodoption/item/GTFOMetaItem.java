@@ -242,6 +242,8 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
     public static MetaItem<?>.MetaValueItem ICE_CREAM_BEAR;
     public static MetaItem<?>.MetaValueItem ICE_CREAM_CHIP;
     public static MetaItem<?>.MetaValueItem ICE_CREAM_RAINBOW;
+    public static MetaItem<?>.MetaValueItem ICE_CREAM_SANDWICH;
+    public static MetaItem<?>.MetaValueItem FREEZE_DRIED_ICE_CREAM_SANDWICH;
 
     //misc items
     public static MetaItem<?>.MetaValueItem GELATIN;
@@ -1127,6 +1129,10 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         LASAGNA_PASTA_DIE = addItem(251, "shape.pasta.lasagna").blacklistKitchen();
 
         KITCHEN_RECIPE = addItem(343, "utility.kitchen_recipe").blacklistKitchen().addComponents(new GTFOKitchenRecipeBehaviour());
+        ICE_CREAM_SANDWICH = addItem(344, "food.sandwich.ice_cream").addComponents(new GTFOFoodStats(6, 0.33f, false, true, ItemStack.EMPTY)
+                .nutrients(1.25f, 0.25f, 1f, 0f, 0.25f));
+        FREEZE_DRIED_ICE_CREAM_SANDWICH = addItem(345, "food.sandwich.freeze_dried_ice_cream").addComponents(new GTFOFoodStats(6, 0.33f, false, true, ItemStack.EMPTY)
+                .nutrients(1.25f, 0.25f, 1f, 0f, 0.25f));
 
         {
             int heal = 44;
