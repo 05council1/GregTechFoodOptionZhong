@@ -484,6 +484,9 @@ public class GTFOMaterialHandler {
             .color(0x695934)
             .build();
 
+    public static final Material MSG_mixture = fluidBuilder(21992, "MSG_mixture")
+            .color(0x766749)
+            .build();
 
     public static final GTFOOredictItem.OreDictValueItem COFFEE_GROUNDS = SHAPED_ITEM.addOreDictItem(1017, "coffee_grounds", 0x1a1612, MaterialIconSet.DULL, OrePrefix.dust);
     public static final GTFOOredictItem.OreDictValueItem SMALL_ROASTED_COFFEE = SHAPED_ITEM.addOreDictItem(1018, "roasted_coffee_small", 0x1a1612, MaterialIconSet.GEM_VERTICAL, OrePrefix.gemChipped);
@@ -598,6 +601,10 @@ public class GTFOMaterialHandler {
     public static final GTFOOredictItem.OreDictValueItem CRACKER_GRAHAM_UNGRADED = SHAPED_ITEM.addOreDictItem(1049, "cracker_graham_ungraded", 0xf0c25d, MaterialIconSet.DULL, OrePrefix.plate);
     public static final GTFOOredictItem.OreDictValueItem CHOCOLATE_LIQUOR_PRESSED = SHAPED_ITEM.addOreDictItem(1050, "chocolate_liquor_pressed", 0xa6795a, GTFOValues.Organic, OrePrefix.crushed);
     public static final GTFOOredictItem.OreDictValueItem CHOCOLATE_LIQUOR_DUTCHED_PRESSED = SHAPED_ITEM.addOreDictItem(1051, "chocolate_liquor_dutched_pressed", 0xab7550, GTFOValues.Organic, OrePrefix.crushed);
+    public static final MetaOreDictItem.OreDictValueItem CASSAVA_PULP = SHAPED_ITEM.addOreDictItem(1052, "cassava_pulp", 0xffd6af, GTFOValues.Organic, OrePrefix.dust);
+    public static final MetaOreDictItem.OreDictValueItem MSG_FERMENTATION_MIXTURE = SHAPED_ITEM.addOreDictItem(1053, "msg_fermentation_mixture", 0xecffd0, GTFOValues.Organic, OrePrefix.dust);
+    public static final MetaOreDictItem.OreDictValueItem MSG = SHAPED_ITEM.addOreDictItem(1054, "msg", 0xfffcf5, GTFOValues.Organic, OrePrefix.dust);
+
 
     public static final Material Paracetamol = new Material.Builder(21900, gtfoId("paracetamol")).dust()
             .color(0x0045A0).iconSet(MaterialIconSet.SHINY)

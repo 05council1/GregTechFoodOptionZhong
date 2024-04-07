@@ -1194,3 +1194,15 @@ gregtechfoodoption.machine.kitchen.tooltip.2=Runs food-related Recipes through a
 gregtechfoodoption.machine.kitchen.tooltip.3=Place singleblock Machines on the porcelain tile!
 gregtechfoodoption.machine.kitchen.tooltip.4=Any size larger than the Preview up to 15x15 is fine.
 gregtechfoodoption.machine.kitchen.tooltip.5=§4Requires cleaning Products to remain efficient!
+
+metaitem.component.deep_bowl.name=Deep Bowl
+metaitem.component.unfired_deep_bowl.name=Unfired Deep Bowl
+metaitem.component.dirty_deep_bowl.name=Dirty Deep Bowl
+metaitem.component.wok.name=Wok
+metaitem.component.unseasoned_wok.name=Unseasoned Wok
+metaitem.crop.cassava.name=Cassava Tuber
+metaitem.seed.cassava.name=Cassava Seed
+metaitem.cassava_pulp_dust.name=Cassava Pulp
+metaitem.msg_fermentation_mixture_dust.name=MSG (Monosodium Glutamate) Fermentation Mixture
+metaitem.msg_dust.name=MSG (Monosodium Glutamate)
+gregtech.material.gtfo_msg_mixture=MSG (Monosodium Glutamate) Mixture

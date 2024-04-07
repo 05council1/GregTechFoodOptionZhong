@@ -400,6 +400,14 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
 
     public static MetaItem<?>.MetaValueItem KITCHEN_RECIPE;
 
+    public static MetaItem<?>.MetaValueItem DEEP_BOWL;
+    public static MetaItem<?>.MetaValueItem UNFIRED_DEEP_BOWL;
+    public static MetaItem<?>.MetaValueItem DIRTY_DEEP_BOWL;
+    public static MetaItem<?>.MetaValueItem WOK;
+    public static MetaItem<?>.MetaValueItem UNSEASONED_WOK;
+    public static MetaItem<?>.MetaValueItem CASSAVA;
+    public static MetaItem<?>.MetaValueItem CASSAVA_SEED;
+
     public GTFOMetaItem() {
         super((short) 0);
     }
@@ -1114,6 +1122,12 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         WHITE_GRAPES = addItem(320, "food.white_grapes").addComponents(new GTFOFoodStats(1, 1f).nutrients(0f, 1f, 0f, 0f, 0f));
         WHITE_GRAPE_SEED = addItem(321, "seed.white_grape");
         WHITE_GRAPE_SEED.addComponents(new GTFOCropSeedBehaviour(GTFOCrops.CROP_WHITE_GRAPE, WHITE_GRAPE_SEED.getStackForm(), WHITE_GRAPES.getStackForm()));
+        CASSAVA = addItem(349, "crop.cassava").addOreDict("cropCassava").addComponents(new GTFOFoodStats(3, 0.8f, false, true, ItemStack.EMPTY,
+                new RandomPotionEffect(MobEffects.WITHER, 100, 25, 0))
+                .nutrients(0f, 0f, 0.75f, 0f, 1f));
+
+        CASSAVA_SEED = addItem(350, "seed.cassava");
+        CASSAVA_SEED.addComponents(new GTFOCropSeedBehaviour(GTFOCrops.CROP_CASSAVA, CASSAVA_SEED.getStackForm(), CASSAVA.getStackForm()));
 
 
         // 175-189 left blank for organic circuits
@@ -1127,6 +1141,13 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         LASAGNA_PASTA_DIE = addItem(251, "shape.pasta.lasagna").blacklistKitchen();
 
         KITCHEN_RECIPE = addItem(343, "utility.kitchen_recipe").blacklistKitchen().addComponents(new GTFOKitchenRecipeBehaviour());
+
+        DEEP_BOWL = addItem(344, "component.deep_bowl").blacklistKitchen();
+        UNFIRED_DEEP_BOWL = addItem(345, "component.unfired_deep_bowl").blacklistKitchen();
+        DIRTY_DEEP_BOWL = addItem(346, "component.dirty_deep_bowl").blacklistKitchen();
+
+        WOK = addItem(347, "component.wok").blacklistKitchen();
+        UNSEASONED_WOK = addItem(348, "component.unseasoned_wok").blacklistKitchen();
 
         {
             int heal = 44;
