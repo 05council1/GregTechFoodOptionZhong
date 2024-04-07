@@ -17,6 +17,7 @@ public class AsiaChain {
     public static void init() {
         componentRecipes();
         msgRecipes();
+        foodRecipes();
     }
 
     public static void componentRecipes() {
@@ -101,6 +102,23 @@ public class AsiaChain {
                 .fluidInputs(MSG_mixture.getFluid(4000))
                 .fluidOutputs(Water.getFluid(4000))
                 .outputs(MSG.getItemStack(1))
+                .EUt(16)
+                .duration(400)
+                .buildAndRegister();
+    }
+
+    public static void foodRecipes() {
+        CUTTER_RECIPES.recipeBuilder()
+                .inputs(TARO.getStackForm(1))
+                .outputs(SLICED_TARO.getStackForm(2))
+                .EUt(16)
+                .duration(400)
+                .buildAndRegister();
+
+        MULTICOOKER_RECIPES.recipeBuilder()
+                .inputs(SLICED_TARO.getStackForm(1))
+                .fluidInputs(Water.getFluid(4000))
+                .outputs(BOILED_TARO_SLICES.getStackForm(1))
                 .EUt(16)
                 .duration(400)
                 .buildAndRegister();

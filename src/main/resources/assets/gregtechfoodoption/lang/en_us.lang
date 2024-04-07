@@ -1228,3 +1228,7 @@ gregtech.material.gtfo_msg_mixture=MSG (Monosodium Glutamate) Mixture
 metaitem.crop.taro.name=Taro Tuber
 metaitem.food.peeled_taro.name=Peeled Taro
 metaitem.food.peeled_taro.tooltip=Slimy when Uncooked
+metaitem.food.sliced_taro.name=Sliced Taro
+metaitem.food.sliced_taro.tooltip=Unboiled
+metaitem.food.boiled_taro_slices.name=Boiled Taro Slices
+metaitem.food.boiled_taro_slices.tooltip=中国批准

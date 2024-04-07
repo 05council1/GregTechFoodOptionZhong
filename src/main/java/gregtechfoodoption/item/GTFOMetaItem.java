@@ -412,6 +412,8 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
     public static MetaItem<?>.MetaValueItem CASSAVA_SEED;
     public static MetaItem<?>.MetaValueItem TARO;
     public static MetaItem<?>.MetaValueItem PEELED_TARO;
+    public static MetaItem<?>.MetaValueItem SLICED_TARO;
+    public static MetaItem<?>.MetaValueItem BOILED_TARO_SLICES;
 
     public GTFOMetaItem() {
         super((short) 0);
@@ -1161,8 +1163,12 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         FREEZE_DRIED_ICE_CREAM_SANDWICH = addItem(352, "food.sandwich.freeze_dried_ice_cream").addComponents(new GTFOFoodStats(6, 0.33f, false, true, ItemStack.EMPTY)
                 .nutrients(1.25f, 0.25f, 1f, 0f, 0.25f));
         //353 taken by taro
-        PEELED_TARO = addItem(354, "food.peeled_taro").addComponents(new GTFOFoodStats(4, 2f, false, true, ItemStack.EMPTY)
+        PEELED_TARO = addItem(354, "food.peeled_taro").addComponents(new GTFOFoodStats(4, 0.5f, false, true, ItemStack.EMPTY)
                 .nutrients(0f, 0f, 0.95f, 0f, 1.8f));
+        SLICED_TARO = addItem(355, "food.sliced_taro").addComponents(new GTFOFoodStats(4, 0.75f, false, true, ItemStack.EMPTY)
+                .nutrients(0f, 0f, 1f, 0f, 2f));
+        BOILED_TARO_SLICES = addItem(356, "food.boiled_taro_slices").addComponents(new GTFOFoodStats(4, 0.8f, false, true, ItemStack.EMPTY)
+                .nutrients(0f, 0f, 1f, 0f, 2f).setPotionEffects(new RandomPotionEffect(MobEffects.REGENERATION, 100, 0, 0)));
         {
             int heal = 44;
             double saturation = 8.6;
