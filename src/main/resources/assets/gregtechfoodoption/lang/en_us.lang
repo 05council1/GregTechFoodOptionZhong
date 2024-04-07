@@ -700,6 +700,21 @@ gregtechfoodoption.machine.farmer.tooltip.consumption=While working, consumes %,
 gregtechfoodoption.machine.farmer.tooltip.working=Works on a 9x9 Farm in front
 gregtechfoodoption.machine.farmer.tooltip.speed=Works on one Block every %d Ticks
 
+# Freeze Dryer
+gregtechfoodoption.machine.mob_extractor.lv.name=Basic Freeze Dryer
+gregtechfoodoption.machine.mob_extractor.mv.name=Advanced Freeze Dryer
+gregtechfoodoption.machine.mob_extractor.hv.name=Advanced Freeze Dryer II
+gregtechfoodoption.machine.mob_extractor.ev.name=Advanced Freeze Dryer III
+gregtechfoodoption.machine.mob_extractor.iv.name=Elite Freeze Dryer
+gregtechfoodoption.machine.mob_extractor.luv.name=Elite Freeze Dryer II
+gregtechfoodoption.machine.mob_extractor.zpm.name=Elite Freeze Dryer III
+gregtechfoodoption.machine.mob_extractor.uv.name=Elite Freeze Dryer IV
+gregtechfoodoption.machine.mob_extractor.uhv.name=High-Tech Freeze Dryer
+gregtechfoodoption.machine.mob_extractor.uev.name=High-Tech Freeze Dryer II
+gregtechfoodoption.machine.mob_extractor.uiv.name=High-Tech Freeze Dryer III
+gregtechfoodoption.machine.mob_extractor.uxv.name=High-Tech Freeze Dryer IV
+gregtechfoodoption.machine.mob_extractor.opv.name=Legendary Freeze Dryer
+
 metaitem.sodium_perchlorate_dust.name=Sodium Perchlorate
 metaitem.sodium_chlorate_dust.name=Sodium Chlorate
 
