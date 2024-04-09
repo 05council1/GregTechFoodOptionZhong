@@ -414,6 +414,9 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
     public static MetaItem<?>.MetaValueItem PEELED_TARO;
     public static MetaItem<?>.MetaValueItem SLICED_TARO;
     public static MetaItem<?>.MetaValueItem BOILED_TARO_SLICES;
+    public static MetaItem<?>.MetaValueItem SICHUAN_PEPPER;
+    public static MetaItem<?>.MetaValueItem DRIED_SICHUAN_PEPPER;
+    public static MetaItem<?>.MetaValueItem CHILI_PEPPER;
 
     public GTFOMetaItem() {
         super((short) 0);
@@ -1076,6 +1079,13 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
         CRANBERRY = addItem(335, "food.berry.cranberry").addComponents(new GTFOFoodStats(1, 0.5f).nutrients(0f, 1f, 0f, 0f, 0f))
                 .addOreDict("cropCranberry").addOreDict("listAllfruit").addOreDict("listAllberry").addOreDict("listAllberrysweet");
         CRANBERRY.addComponents(new GTFOBerrySeedBehaviour(GTFOCrops.BUSH_CRANBERRY, CRANBERRY.getStackForm(), CRANBERRY.getStackForm()));
+        SICHUAN_PEPPER = addItem(357, "food.berry.sichuan_pepper").addComponents(new GTFOFoodStats(1, 0.7f).nutrients(0f, 0f, 0f, 0f, 0.2f))
+                .addOreDict("cropSichuanPepper");
+        SICHUAN_PEPPER.addComponents(new GTFOBerrySeedBehaviour(GTFOCrops.BUSH_SICHUAN_PEPPER, SICHUAN_PEPPER.getStackForm(), SICHUAN_PEPPER.getStackForm()));
+        CHILI_PEPPER = addItem(359, "food.berry.chili_pepper").addComponents(new GTFOFoodStats(1, 0.9f).nutrients(0f, 0f, 0f, 0f, 0.4f))
+                .addOreDict("cropChiliPepper");
+        CHILI_PEPPER.addComponents(new GTFOBerrySeedBehaviour(GTFOCrops.BUSH_CHILI_PEPPER, CHILI_PEPPER.getStackForm(), CHILI_PEPPER.getStackForm()));
+
 
         BERRY_MEDLEY = addItem(336, "food.berry_medley").addComponents(new GTFOFoodStats(5, 0.5f, false, false, new ItemStack(Items.BOWL)).nutrients(0f, 1f, 0f, 0f, 0f));
         ETIRPS_CRANBERRY = addItem(337, "food.etirps_cranberry").addComponents(new GTFOFoodStats(GTFOConfig.gtfoFoodConfig.etirpsHunger + 3, GTFOConfig.gtfoFoodConfig.etirpsSaturation + 0.3f, true, true, PLASTIC_BOTTLE.getStackForm(),
@@ -1169,6 +1179,9 @@ public class GTFOMetaItem extends MetaItem<GTFOMetaItem.GTFOMetaValueItem> imple
                 .nutrients(0f, 0f, 1f, 0f, 2f));
         BOILED_TARO_SLICES = addItem(356, "food.boiled_taro_slices").addComponents(new GTFOFoodStats(4, 0.8f, false, true, ItemStack.EMPTY)
                 .nutrients(0f, 0f, 1f, 0f, 2f).setPotionEffects(new RandomPotionEffect(MobEffects.REGENERATION, 100, 0, 0)));
+        //357 taken by sichuan pepper
+        DRIED_SICHUAN_PEPPER = addItem(358, "food.dried_sichuan_pepper").addComponents(new GTFOFoodStats(1, 0.8f).nutrients(0f, 0f, 0f, 0f, 0.2f));
+        //359 taken by chili pepper
         {
             int heal = 44;
             double saturation = 8.6;

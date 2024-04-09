@@ -11,6 +11,7 @@ import static gregtech.api.unification.ore.OrePrefix.*;
 import static gregtech.common.items.MetaItems.*;
 import static gregtechfoodoption.GTFOMaterialHandler.*;
 import static gregtechfoodoption.item.GTFOMetaItem.*;
+import static gregtechfoodoption.recipe.GTFORecipeMaps.HOTPOT_RECIPES;
 import static gregtechfoodoption.recipe.GTFORecipeMaps.MULTICOOKER_RECIPES;
 
 public class AsiaChain {
@@ -18,6 +19,7 @@ public class AsiaChain {
         componentRecipes();
         msgRecipes();
         foodRecipes();
+        hotpotRecipes();
     }
 
     public static void componentRecipes() {
@@ -121,6 +123,17 @@ public class AsiaChain {
                 .outputs(BOILED_TARO_SLICES.getStackForm(1))
                 .EUt(16)
                 .duration(400)
+                .buildAndRegister();
+    }
+
+    public static void hotpotRecipes() {
+        HOTPOT_RECIPES.recipeBuilder()
+                .inputs(DRIED_SICHUAN_PEPPER.getStackForm(5))
+                .inputs(CHILI_PEPPER.getStackForm(2))
+                .fluidInputs(Water.getFluid(3000))
+                .fluidOutputs(SichuanHotPot.getFluid(2000))
+                .EUt(32)
+                .duration(600)
                 .buildAndRegister();
     }
 

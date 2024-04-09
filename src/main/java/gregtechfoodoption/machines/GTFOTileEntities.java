@@ -4,6 +4,7 @@ import gregtech.api.GTValues;
 import gregtech.api.recipes.RecipeMap;
 import gregtech.api.util.GTUtility;
 import gregtech.client.renderer.ICubeRenderer;
+import gregtech.common.metatileentities.multi.electric.MetaTileEntityHotpot;
 import gregtechfoodoption.GregTechFoodOption;
 import gregtechfoodoption.client.GTFOClientHandler;
 import gregtechfoodoption.item.GTFOSimpleMachineMetaTileEntity;
@@ -38,6 +39,7 @@ public class GTFOTileEntities {
     public static MetaTileEntitySteamBakingOven STEAM_BAKING_OVEN;
     public static MetaTileEntityGreenhouse GREENHOUSE;
     public static MetaTileEntityKitchen KITCHEN;
+    public static MetaTileEntityHotpot HOTPOT;
 
     public static void init() {
 /*
@@ -106,6 +108,7 @@ public class GTFOTileEntities {
 
         registerGTFOSimpleMetaTileEntity(FREEZE_DRYER, 8582, "freeze_dryer", GTFORecipeMaps.FREEZE_DRYER_RECIPES, GTFOClientHandler.FREEZE_DRYER_OVERLAY, true, GTFOTileEntities::location, GTUtility.hvCappedTankSizeFunction);
 
+        HOTPOT = registerMetaTileEntity(8595, new MetaTileEntityHotpot(location("hotpot")));
     }
 
     private static ResourceLocation location(String name) {

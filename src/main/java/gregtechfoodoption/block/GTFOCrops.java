@@ -33,6 +33,8 @@ public class GTFOCrops {
     public static GTFOBerryBush BUSH_LINGONBERRY = GTFOBerryBush.create("lingonberry");
     public static GTFOBerryBush BUSH_ELDERBERRY = GTFOBerryBush.create("elderberry");
     public static GTFOBerryBush BUSH_CRANBERRY = GTFOBerryBush.create("cranberry");
+    public static GTFOBerryBush BUSH_SICHUAN_PEPPER = GTFOBerryBush.create("sichuan_pepper");
+    public static GTFOBerryBush BUSH_CHILI_PEPPER = GTFOBerryBush.create("chili_pepper");
 
 
     //public static GTFOCrop CROP_HOPS = GTFOCrop.create("hops");

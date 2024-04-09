@@ -456,11 +456,9 @@ public class GTFOMaterialHandler {
     public static final Material LacticAcidBacteria = fluidBuilder(21619, "lactic_acid_bacteria")
             .color(0x371040)
             .build();
-
     public static final Material FungalRennetSolution = fluidBuilder(21620, "fungal_rennet_solution")
             .color(0x2a7b5a)
             .build();
-
 
     public static final Material SweetenedDilutedCaneSyrupMixture = fluidBuilder(21970, "sweetened_diluted_cane_syrup_mixture")
             .color(0xdedcc8)
@@ -488,6 +486,9 @@ public class GTFOMaterialHandler {
             .color(0x766749)
             .build();
 
+    public static final Material SichuanHotPot = fluidBuilder(21993, "SichuanHotPot")
+            .color(0xda0000)
+            .build();
     public static final GTFOOredictItem.OreDictValueItem COFFEE_GROUNDS = SHAPED_ITEM.addOreDictItem(1017, "coffee_grounds", 0x1a1612, MaterialIconSet.DULL, OrePrefix.dust);
     public static final GTFOOredictItem.OreDictValueItem SMALL_ROASTED_COFFEE = SHAPED_ITEM.addOreDictItem(1018, "roasted_coffee_small", 0x1a1612, MaterialIconSet.GEM_VERTICAL, OrePrefix.gemChipped);
     public static final GTFOOredictItem.OreDictValueItem LARGE_ROASTED_COFFEE = SHAPED_ITEM.addOreDictItem(1019, "roasted_coffee_large", 0x1a1612, MaterialIconSet.GEM_VERTICAL, OrePrefix.gemChipped);

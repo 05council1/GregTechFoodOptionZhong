@@ -25,6 +25,10 @@ public class GTFOBerries {
             .addCondition(new TemperatureRainfallCondition(3, 0.9, 0.2, 0.4, 0.6));
     public static GTFOFeature BUSH_CRANBERRY = new GTFOBerry(1009, GTFOCrops.BUSH_CRANBERRY)
             .addCondition(new TemperatureRainfallCondition(3, 1.2, 0.2, 0.4, 0.6));
+    public static GTFOFeature BUSH_SICHUAN_PEPPER = new GTFOBerry(1010, GTFOCrops.BUSH_SICHUAN_PEPPER)
+            .addCondition(new TemperatureRainfallCondition(3, 0.7, 0.3, 0.5, 0.8));
+    public static GTFOFeature BUSH_CHILI_PEPPER = new GTFOBerry(1011, GTFOCrops.BUSH_CHILI_PEPPER)
+            .addCondition(new TemperatureRainfallCondition(3, 0.7, 0.3, 0.5, 0.8));
 
     public static void init() {
 

@@ -1,6 +1,7 @@
 package gregtechfoodoption.client;
 
 import gregtech.api.gui.resources.TextureArea;
+import gregtech.client.renderer.texture.cube.OrientedOverlayRenderer;
 
 public class GTFOGuiTextures {
     public static final TextureArea PROGRESS_BAR_SLICER = TextureArea.fullImage("textures/gui/progress_bar/progress_bar_slicer.png");
@@ -24,5 +25,6 @@ public class GTFOGuiTextures {
     public static final TextureArea GTFO_LOGO_ERROR = TextureArea.fullImage("textures/gui/icon/gtfo_logo_error.png");
     public static final TextureArea GTFO_LOGO_WARNING = TextureArea.fullImage("textures/gui/icon/gtfo_logo_warning.png");
     public static final TextureArea GTFO_LOGO_WORKING = TextureArea.fullImage("textures/gui/icon/gtfo_logo_working.png");
+
 
 }

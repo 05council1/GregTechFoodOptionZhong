@@ -86,4 +86,14 @@ public class GTFORecipeMaps {
     @ZenProperty
     public static final RecipeMap<SimpleRecipeBuilder> GREENHOUSE_RECIPES = new RecipeMap<>("greenhouse", 4, 4, 1, 1, new SimpleRecipeBuilder(), false)
             .setSound(GTSoundEvents.COOLING);
+
+    @ZenProperty
+    public static final RecipeMap<SimpleRecipeBuilder> HOTPOT_RECIPES = new RecipeMap<>(
+            "hotpot",
+            9,
+            3,
+            3,
+            3,
+            new SimpleRecipeBuilder(), false)
+            .setSound(GTSoundEvents.BOILER);
 }
